@@ -8,23 +8,13 @@ const resultText = document.getElementById("result-text");
 
 //Options values for buttons
 let options = {
-  Növények: [
-    "Alma",
-    "Banán",
-    "Mandarin",
-    "Ananász",
-    "Görögdinnye",
-    "Narancs",
-  ],
-  Állatok: ["Sündisznó", "Rinocérosz", "Mókus", "Oroszlán", "Zebra"],
-  Országok: [
-    "India",
-    "Ciprus",
-    "Ausztria",
-    "Andorra",
-    "Zimbabwe",
-    "Chile",
-  ],
+  Gyümölcsök: ["Alma","Banán","Mandarin","Ananász","Görögdinnye","Vérnarancs","Sárgabarack","Avokádó","Sárkánygyümölcs","Paradicsom","Durián", "Grapefruit","Szilva","Fügekaktusz","Csipkebogyó","Vörösáfonya","Maracuja","Mangusztán","Rambután",],
+  Állatok: ["Sündisznó", "Rinocérosz", "Mókus", "Oroszlán", "Zebra", "Albatrosz","Aligátor","Elefánt","Éticsiga","Jaguár","	Jegesmedve","Jávorszarvas","Nyílméregbéka","Poszméh","Tapír","Tengerimalac","Tukán","Túzok","Tücsök","Sakál","Dámszarvas","Dingo","Díszfácán",		"Disznó","Dongó","Dögkeselyű",],
+  Országok: ["India","Ciprus","Ausztria","Andorra","Zimbabwe","Chile", "Afganisztán", "Albánia","Barbados",
+  "Belgium","Bhután","Brunei","Bolívia","Botswana","Amerikai Egyesült Államok","Üzbegisztán","Ukrajna","Uruguay", "Szenegál","Szerbia","Szingapúr","Spanyolország","Svédország","Románia","Peru","Portugália", "Olaszország",
+  "Omán","Oroszország","Németország","Kazahsztán","Jamaica",
+  "Japán","Írország","Izland","Izrael","Hollandia","Honduras","Horvátország","Ghána","Görögország","Finnország","Franciaország","Egyiptom",
+  "Elefántcsontpart","Csád","Csehország"]
 };
 
 let winCount = 0;
