@@ -6,7 +6,6 @@ const newGameButton = document.getElementById("new-game-button");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("result-text");
 
-//Options values for buttons
 let options = {
   Gyümölcsök: ["Alma","Banán","Mandarin","Ananász","Görögdinnye","Vérnarancs","Sárgabarack","Avokádó","Sárkánygyümölcs","Paradicsom","Durián", "Grapefruit","Szilva","Fügekaktusz","Csipkebogyó","Vörösáfonya","Maracuja","Mangusztán","Rambután",],
   Állatok: ["Sündisznó", "Rinocérosz", "Mókus", "Oroszlán", "Zebra", "Albatrosz","Aligátor","Elefánt","Éticsiga","Jaguár","	Jegesmedve","Jávorszarvas","Nyílméregbéka","Poszméh","Tapír","Tengerimalac","Tukán","Túzok","Tücsök","Sakál","Dámszarvas","Dingo","Díszfácán",		"Disznó","Dongó","Dögkeselyű",],
