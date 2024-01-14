@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman-Game</title>
+  <link rel="stylesheet" href="./gamepage.css">
+</head>
+
+<body id="top">
+  <header class="header">
+
+    <div class="header-bottom skewBg" data-header>
+      <div class="container">
+
+        <img src="./img/logo2.png" class="logo" alt="">
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link skewBg" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link skewBg" data-nav-link>Features</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link skewBg" data-nav-link>Blog</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link skewBg" data-nav-link>Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="cart-btn" aria-label="cart">
+            <ion-icon name="cart"></ion-icon>
+            <span class="cart-badge">0</span>
+          </button>
+
+          <button class="search-btn" aria-label="open search" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-outline" class="menu"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" id="home" aria-label="home"
+        style="background-image: url('./img/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">ThinkLab</p>
+
+            <h1 class="h1 hero-title">
+              Elevate <span class="span">Your</span>  Thinking 
+            </h1>
+
+            <p class="hero-text">
+              A ThinkLab a műszaki segítség leghatékonyabb módját használja ügyfeleinél keletkezett hibák, karbantartások, egyéb feladatok elvégzésénél az esetek 100%-ban.
+            </p>
+
+            <button class="btn skewBg">Olvass Többet</button>
+
+          </div>
+
+          <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+            <img src="..." width="700" height="700" alt="..." class="w-100">
+          </figure>
+
+        </div>
+      </section>
+  
+      <div class="section-wrapper">
+
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+
+            <h2 class="h2 section-title">
+              ThinkLab <span class="span">Shop</span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">Ütős ajánlat!</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">AMD Ryzen 5 3600X</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">55 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">AMD Ryzen 5 5600X</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">75 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">GIGABYTE RTX 3060</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">125 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">GIGABYTE RTX 4070 Ti</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">42 500 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+              <!------------------------------------------------------>
+            </ul>
+            <ul class="has-scrollbar">
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Gigabyte 850W Gold</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">45 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Seasonic B12 BC 750W</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">25 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">GIGABYTE B760 Gaming</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">55 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./img/product1.jpg" width="400" height="470" 
+                      alt="..." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">...</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">GIGABYTE B550 Gaming</a>
+                    </h3>
+
+                    <p class="card-price">
+                      Ár: <span class="span">45 000 Ft</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li>
+              <!------------------------------------------------------>
+            </ul>
+
+          </div>
+        </section>
+
+      </div>
+
+      <section class="section featured-game" id="features" aria-label="featured game">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Az Összes Kiadott <span class="span">Játékunk</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./img/hangman.jpg" width="450" height="600" 
+                    alt="Akasztófa" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Akasztófa <span class="span">Játék</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Browser</span>
+                  </span>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./img/snake.png" width="450" height="600" 
+                    alt="Snake" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Snake <span class="span">Játék</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Browser</span>
+                  </span>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./img/tictactoe.png" width="450" height="600" 
+                    alt="tictactoe" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      <span class="span">Tic-</span>Tac<span class="span">-Toe</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Browser</span>
+                  </span>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./img/minesweeper.png" width="450" height="600" 
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Mine<span class="span">sweeper</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Browser</span>
+                  </span>
+
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+            <h2 class="h2">
+              <span class="span">Információk</span>
+            </h2>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">ThinkLab</a>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="location" style="color: #fff;"></ion-icon>
+              </div>
+
+              <address class="item-text">
+                Címünk : Gyöngyös, Thán Károly u. 1, 3200
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset" style="color: #fff;"></ion-icon>
+              </div>
+
+              <a href="tel:+241245654235" class="item-text">Telefonszám : +36 150 6070</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-open" style="color: #fff;"></ion-icon>
+              </div>
+
+              <a href="mailto:info@exemple.com" class="item-text">Email : info.thinklab@email.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Termékeink</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Játékaink</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Felhő szolgáltatás</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Webfejlesztés</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Kell segítség?</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Felhasználási feltételek</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              Adatvédelmi irányelvek</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              Pénzvisszatérítési eljárás</a>
+          </li>
+        </ul>
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Kövess minket</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #3b5998">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #55acee">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #d71e18">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #1565c0">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-newsletter">
+
+            <p class="footer-list-title">Feliratkozás a hírlevélre!</p>
+
+            <form action="" class="footer-newsletter">
+              <input type="email" name="email_address" aria-label="email" placeholder="Üsd be az emailed" required
+                class="email-field">
+
+              <button type="submit" class="footer-btn" aria-label="submit">
+                <ion-icon name="rocket"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright" style="color: #fff;">
+          &copy;  ThinkLab 2024. Minden Jog Fenntartva.
+        </p>
+        <img src="./img/footer-bottom-img.png" width="340" height="21"  alt=""
+          class="footer-bottom-img">
+      </div>
+    </div>
+
+  </footer>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
