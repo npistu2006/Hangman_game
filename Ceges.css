@@ -8,6 +8,11 @@
     font-family: 'Roboto Mono', monospace, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 header {
     width: 100%;
     max-height: 600px;
