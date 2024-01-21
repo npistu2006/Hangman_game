@@ -21,7 +21,7 @@ let count = 0;
 
 let chosenWord = "";
 
-//Választási lehetőségek
+//Options
 const displayOptions = () => {
   optionsContainer.innerHTML += `<h3>Válasszon egy opciót!</h3>`;
   let buttonCon = document.createElement("div");
