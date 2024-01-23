@@ -29,9 +29,8 @@ header {
 }
 
 body {
-    background: linear-gradient(to bottom, #3498db, #2c3e50);
+    background-color: rgb(43, 42, 47);
     margin: 0;
-
 }
 
 header img {
@@ -74,9 +73,7 @@ h2 {
     font-size: 2rem;
     letter-spacing: 8px;
 }
-.logo img {
-    animation: rotate 2s infinite linear;
-}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -160,7 +157,6 @@ main {
     align-items: center;
     margin-top: 25px;
     margin-bottom: 25px;
-    
 }
 .informations {
     font-family: 'Arial', sans-serif;
@@ -223,15 +219,16 @@ section {
     border-radius: 50%;
     left: -20px;
     top: 50%;
+
     transform: translate(0, -50%);
-    animation: bounceInCircle 1s ease-out;
+
 }
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    width: 80%;
-    margin: 0 auto;
+    width: 82.5%;
+    margin: 10 auto;
     animation: fadeInUp 1.5s ease-out;
 }
 
@@ -252,6 +249,14 @@ section {
     justify-content: center;
     transition: transform 0.3s ease-out;
 }
+.elerhetoseg{
+    background-color: #fff;
+    margin: 40px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    
+}
 
 .box1,
 .box2,
@@ -260,6 +265,9 @@ section {
     text-align: center;
     margin-bottom: 10px;
     font-size: 1.5rem;
+}
+.elerhetoseg:hover{
+    transform: scale(1.05);
 }
 .box1:hover,
 .box2:hover,
@@ -275,6 +283,10 @@ section:hover{
     background-color: #000;
     color: #fff;
     margin-bottom: -10px;
+}
+
+.box h1{
+    font-size: 1.8rem;
 }
 
 .services .row {
@@ -334,7 +346,7 @@ footer>span {
 }
 
 
-  @keyframes fadeInDown {
+@keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-20px);
@@ -344,14 +356,7 @@ footer>span {
         transform: translateY(0);
     }
 }
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
 @keyframes scaleWidth {
     from {
         width: 0;
@@ -368,13 +373,5 @@ footer>span {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-@keyframes bounceInCircle {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
     }
 }
