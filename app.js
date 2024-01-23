@@ -120,6 +120,9 @@ const generateWord = (optionValue) => {
     let { initialDrawing } = canvasCreator();
     initialDrawing();
   };
+
+//Akasztófa rajzoló
+
 const canvasCreator = () => {
   let context = canvas.getContext("2d");
   context.beginPath();
