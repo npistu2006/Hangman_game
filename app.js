@@ -21,7 +21,7 @@ let count = 0;
 
 let chosenWord = "";
 
-//Választási lehetőségek
+//Options
 const displayOptions = () => {
   optionsContainer.innerHTML += `<h3>Válasszon egy opciót!</h3>`;
   let buttonCon = document.createElement("div");
@@ -120,6 +120,9 @@ const generateWord = (optionValue) => {
     let { initialDrawing } = canvasCreator();
     initialDrawing();
   };
+
+//Akasztófa rajzoló
+
 const canvasCreator = () => {
   let context = canvas.getContext("2d");
   context.beginPath();
