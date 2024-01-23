@@ -24,7 +24,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    animation: fadeInDown 1.5s ease-out;
+    animation: fadeInDown 2s ease-out;
 
 }
 
@@ -152,6 +152,9 @@ h2 {
     content: none;
 }
 
+/*Header eddig*/
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -178,7 +181,7 @@ main {
 }
 
 .informations h1 {
-    animation: bounceIn 1.5s ease-out;
+    animation: fadeInDown 1.5s ease-out;
     color: #007BFF;
     padding: 20px;
     text-align: center;
@@ -208,9 +211,7 @@ section {
 .informations li {
     margin-bottom: 10px;
 }
-#goals ul li {
-    position: relative;
-}
+
 
 #goals ul li::before {
     content: '';
@@ -221,9 +222,7 @@ section {
     border-radius: 50%;
     left: -20px;
     top: 50%;
-
-    transform: translate(0, -50%);
-
+    
 }
 .container {
     display: grid;
@@ -278,9 +277,23 @@ section {
 {
     transform: scale(1.05);
 }
+section{
+    transition: transform 0.3s ease-out;
+}
 section:hover{
     transform: scale(1.05);
+    
 }
+.elerhetoseg{
+    transition: transform 0.3s ease-out;
+}
+.elerhetoseg:hover{
+    transform: scale(1.05);
+    
+}
+
+/*Main eddig*/
+
 .services {
     background-color: #000;
     color: #fff;
@@ -344,9 +357,10 @@ footer>span {
 }
 
 
+/*Footer eddig*/
 @keyframes fadeInDown {
     from {
-        opacity: 0;
+        opacity: .5;
         transform: translateY(-20px);
     }
     to {
@@ -361,15 +375,5 @@ footer>span {
     }
     to {
         width: 100%;
-    }
-}
-@keyframes bounceIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
